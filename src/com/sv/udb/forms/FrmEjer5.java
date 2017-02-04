@@ -60,7 +60,7 @@ public class FrmEjer5 extends javax.swing.JFrame {
         btn0 = new javax.swing.JButton();
         btnIgual = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
 
         txtresultados.setEditable(false);
         txtresultados.setFont(new java.awt.Font("Consolas", 0, 18)); // NOI18N
