@@ -88,6 +88,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu5);
 
         jMenu6.setText("Ejercicio 6");
+        jMenu6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu6MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("Ejercicio 7");
@@ -151,6 +156,10 @@ public class FrmPrincipal extends javax.swing.JFrame {
         FrmEjerc7 Mostrar = new FrmEjerc7();
         Mostrar.setVisible(true);
     }//GEN-LAST:event_jMenu7MouseClicked
+
+    private void jMenu6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu6MouseClicked
+       JOptionPane.showMessageDialog(this, "Este ejercicio no esta porque soy descuidado!");
+    }//GEN-LAST:event_jMenu6MouseClicked
 
     /**
      * @param args the command line arguments

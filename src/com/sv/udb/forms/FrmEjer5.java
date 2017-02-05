@@ -352,7 +352,7 @@ public class FrmEjer5 extends javax.swing.JFrame {
 
     private void btnPorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPorActionPerformed
 
-        if(!this.firtOperation.equals(""))
+        if(this.firtOperation != "")
         {
             if(this.firtexe == true)
             {
@@ -371,11 +371,21 @@ public class FrmEjer5 extends javax.swing.JFrame {
                 }
                 else
                 {
-                    this.nowOperation =txtresultados.getText();
+                     String lastOne,nActual,datoEli;
+                     nActual = String.valueOf(txtresultados.getText());
+                     datoEli = String.valueOf(nActual.charAt(nActual.length()-1));
+                    if(datoEli.equals("x") ||datoEli.equals("/") ||datoEli.equals("-") ||datoEli.equals("+") )
+                    {
+                        
+                    }else
+                    {
+                        this.nowOperation =txtresultados.getText();
                 this.nowOperation += "x";
                 txtresultados.setText(nowOperation);
                 simOperation = 1;
                 isDigit = false;
+                    }
+                    
                 }
             }
         }
@@ -602,11 +612,20 @@ public class FrmEjer5 extends javax.swing.JFrame {
                 }
                 else
                 {
+                    String lastOne,nActual,datoEli;
+                     nActual = String.valueOf(txtresultados.getText());
+                     datoEli = String.valueOf(nActual.charAt(nActual.length()-1));
+                    if(datoEli.equals("x") ||datoEli.equals("/") ||datoEli.equals("-") ||datoEli.equals("+") )
+                    {
+                        
+                    }else
+                    {
                     this.nowOperation =txtresultados.getText();
                 this.nowOperation += "/";
                 txtresultados.setText(nowOperation);
                 simOperation = 2;
                 isDigit = false;
+                    }
                 }
             }
         }
@@ -636,11 +655,20 @@ public class FrmEjer5 extends javax.swing.JFrame {
                 }
                 else
                 {
+                    String lastOne,nActual,datoEli;
+                     nActual = String.valueOf(txtresultados.getText());
+                     datoEli = String.valueOf(nActual.charAt(nActual.length()-1));
+                    if(datoEli.equals("x") ||datoEli.equals("/") ||datoEli.equals("-") ||datoEli.equals("+") )
+                    {
+                        
+                    }else
+                    {
                     this.nowOperation =txtresultados.getText();
                 this.nowOperation += "-";
                 txtresultados.setText(nowOperation);
                 simOperation = 3;
                 isDigit = false;
+                    }
                 }
             }
         }
@@ -670,11 +698,20 @@ public class FrmEjer5 extends javax.swing.JFrame {
                 }
                 else
                 {
+                    String lastOne,nActual,datoEli;
+                     nActual = String.valueOf(txtresultados.getText());
+                     datoEli = String.valueOf(nActual.charAt(nActual.length()-1));
+                    if(datoEli.equals("x") ||datoEli.equals("/") ||datoEli.equals("-") ||datoEli.equals("+") )
+                    {
+                        
+                    }else
+                    {
                     this.nowOperation =txtresultados.getText();
                 this.nowOperation += "+";
                 txtresultados.setText(nowOperation);
                 simOperation = 4;
                 isDigit = false;
+                    }
                 }
             }
         }
