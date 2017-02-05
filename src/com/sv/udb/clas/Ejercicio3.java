@@ -5,10 +5,21 @@
  */
 package com.sv.udb.clas;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Estudiante
  */
 public class Ejercicio3 {
-    
+    private String datos;
+
+    public String getDatos() {
+        return datos;
+    }
+
+    public void setDatos(String datos) {
+        this.datos = datos;
+    }
 }

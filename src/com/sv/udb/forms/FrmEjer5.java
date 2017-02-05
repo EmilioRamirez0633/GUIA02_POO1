@@ -352,7 +352,7 @@ public class FrmEjer5 extends javax.swing.JFrame {
 
     private void btnPorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPorActionPerformed
 
-        if(this.firtOperation != "")
+        if(!this.firtOperation.equals(""))
         {
             if(this.firtexe == true)
             {
@@ -404,7 +404,7 @@ public class FrmEjer5 extends javax.swing.JFrame {
                 /*lastOne = String.valueOf(firtOperation.charAt(firtOperation.length()-1));
                 lastOne2 = String.valueOf(firtOperation.charAt(firtOperation.length()-2));
                 if(lastOne.equals("0") && lastOne2.equals("."))
-                {
+                {                                                                                   era un codigo para quitar decimales pero no funciono :C
                     String cadenaNueva = firtOperation.substring(0, firtOperation.length()-1); 
                     String cadenaNueva2 = cadenaNueva.substring(0, cadenaNueva.length()-1);
                     this.datos.setResultadoActual(Double.parseDouble(cadenaNueva2));

@@ -64,6 +64,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(BtnEjer2);
 
         jMenu3.setText("Ejercicio 3");
+        jMenu3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu3MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu3);
 
         jMenu4.setText("Ejercicio 4");
@@ -86,6 +91,11 @@ public class FrmPrincipal extends javax.swing.JFrame {
         jMenuBar1.add(jMenu6);
 
         jMenu7.setText("Ejercicio 7");
+        jMenu7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jMenu7MouseClicked(evt);
+            }
+        });
         jMenuBar1.add(jMenu7);
 
         setJMenuBar(jMenuBar1);
@@ -131,6 +141,16 @@ public class FrmPrincipal extends javax.swing.JFrame {
         FrmEjer5 Mostrar = new FrmEjer5();
         Mostrar.setVisible(true);
     }//GEN-LAST:event_jMenu5MouseClicked
+
+    private void jMenu3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu3MouseClicked
+        FrmEjer3 Mostrar = new FrmEjer3();
+        Mostrar.setVisible(true);
+    }//GEN-LAST:event_jMenu3MouseClicked
+
+    private void jMenu7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenu7MouseClicked
+        FrmEjerc7 Mostrar = new FrmEjerc7();
+        Mostrar.setVisible(true);
+    }//GEN-LAST:event_jMenu7MouseClicked
 
     /**
      * @param args the command line arguments
